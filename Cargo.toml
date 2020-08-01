@@ -9,7 +9,7 @@ edition = "2018"
 [dependencies]
 #libremarkable = "0.4.1"
 #libremarkable = { git = "https://github.com/LinusCDE/libremarkable.git" }
-libremarkable" = { path = "../libremarkable" }
+libremarkable = { path = "../libremarkable" }
 
 # The reMarkable is shipped with a statically linked openssl.
 # So there is no system library to link against. This dependency
