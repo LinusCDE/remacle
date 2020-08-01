@@ -7,7 +7,9 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-"libremarkable" = "0.4.1"
+#"libremarkable" = "0.4.1"
+#"libremarkable" = { git = "https://github.com/LinusCDE/libremarkable.git" }
+"libremarkable" = { path = "../libremarkable" }
 
 # The reMarkable is shipped with a statically linked openssl.
 # So there is no system library to link against. This dependency
@@ -17,3 +19,5 @@ edition = "2018"
 "openssl" = { version = "0.10", features = ["vendored"] }
 
 "mango-client" = { git = "https://git.cosmos-ink.net/linus/mango-client.git" }
+
+"tokio" = { version = "0.2.22", features = [ "full" ] }
